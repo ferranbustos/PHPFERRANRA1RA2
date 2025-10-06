@@ -16,7 +16,7 @@ class P33_NumberOfNumbers
             }
 
             $contador++;
-            echo $contador;
+           
 
         } while (true);
     }
