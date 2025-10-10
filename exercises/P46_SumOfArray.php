@@ -8,9 +8,16 @@ class P46_SumOfArray
         echo $this->sumOfNumbersInArray($array) . "\n";
     }
 
-    public function sumOfNumbersInArray(array $array): int
-    {
-        // Write your code here
-       
+    public function sumOfNumbersInArray(array $array): int {    
+        if (empty($array)) {
+            return 0;
+        }
+        $suma = 0;
+
+        foreach ($array as $numero) {
+            $suma += $numero;
+        }
+
+        return $suma;
     }
 }

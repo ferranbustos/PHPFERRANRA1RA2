@@ -10,7 +10,13 @@ class P47_ArrayPrinter
 
     public function printNeatly(array $array): void
     {
-        // Write your code here
-       
+        
+        if (!empty($array)) {
+            echo implode(", ", $array) . "\n";
+        }  else {
+           
+            echo "\n";
+        }
+        
     }
 }
